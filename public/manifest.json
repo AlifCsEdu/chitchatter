@@ -1,7 +1,7 @@
 {
-  "short_name": "Chitchatter",
-  "name": "Chitchatter",
-  "description": "This is a communication tool that is free, open source, and designed for simplicity and security. All communication between you and your online peers is encrypted. There is no trace of your conversation once you leave.",
+  "short_name": "KUPTM Chat",
+  "name": "KUPTM CHit Chat",
+  "description": "This is a video chat and a text chat service.",
   "icons": [
     {
       "src": "favicon.ico",
@@ -21,7 +21,7 @@
   ],
   "start_url": "./",
   "display": "fullscreen",
-  "theme_color": "#000000",
+  "theme_color": "#225ca3",
   "background_color": "#222222",
   "screenshots": [
     {

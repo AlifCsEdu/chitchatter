@@ -31,27 +31,25 @@ export const About = () => {
         {`
 ### User Guide
 
-Chitchatter is a communication tool designed to make secure and private communication accessible to all. Please [see the README](https://github.com/jeremyckahn/chitchatter/blob/develop/README.md) for full project documentation.
+KUPTM Chit Chat is a messaging website that allows students and friends to connect with each other using both video chat and text chat. Simply enter your name and start chatting!
 
 #### Chat rooms
 
-Public rooms can be joined by **anyone** with the room URL. By default, rooms are given a random and unguessable name. You can name your room whatever you'd like, but keep in mind that simpler room names are more guessable by others. For maximum security, consider using the default room name.
+On KUPTM Chit Chat, you can create public or private rooms.
 
-Private rooms can only be joined by peers with a matching password. The password must be mutually agreed upon before joining. If peers submit mismatching passwords, they will be in the room but be unable to connect to each other. **No error will be shown** if there is a password mismatch because there is no central arbitrating mechanism by which to detect the mismatch.
+Public rooms can be joined by anyone with the room URL. Private rooms need a password that you agree on with the people you invite.
 
-To connect to others, share the room URL with a secure tool such as [Burner Note](https://burnernote.com/) or [Yopass](https://yopass.se/). You will be notified when others join the room.
+To connect with others, share the room URL. You'll be notified when people join the room.
 
 ##### Community rooms
 
 There is [a public list of community rooms](https://github.com/jeremyckahn/chitchatter/wiki/Chitchatter-Community-Rooms) that you can join to discuss various topics.
 
-##### Conversation backfilling
+Once you leave a chat room on KUPTM Chit Chat, all conversations are erased and not saved anywhere.
 
-Conversation transcripts are erased from local memory as soon as you close the page or navigate away from the room. Conversations are only ever held in volatile memory and never persisted to any disk by Chitchatter.
+If you join a public room that already has people in it, you'll automatically see the conversation that's already happened. If nobody is in the room, there won't be any conversation history.
 
-When a peer joins a **public** room with participants already in it, the new peer will automatically request the transcript of the conversation that has already taken place from the other peers. Once all peers leave the room, the conversation is completely erased. Peers joining a **private** room will not get the conversation transcript backfilled.
-
-Chat transcript history is limited to ${messageTranscriptSizeLimitFormatted} messages for all rooms.
+You can only see up to ${messageTranscriptSizeLimitFormatted} messages of chat history for all rooms.
 
 #### Message Authoring
 

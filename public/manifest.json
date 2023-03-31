@@ -22,7 +22,7 @@
   "start_url": "./",
   "display": "fullscreen",
   "theme_color": "#225ca3",
-  "background_color": "#222222",
+  "background_color": "#2b5da2",
   "screenshots": [
     {
       "src": "screenshots/home-desktop.png",

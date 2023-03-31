@@ -43,8 +43,23 @@ export const Shell = ({ appNeedsUpdate, children, userPeerId }: ShellProps) => {
       createTheme({
         palette: {
           mode: colorMode,
+          primary: {
+            main: '#2b5da2',
+            light: '#2b5da2',
+            dark: '#e61c25',
+          },
+        },
+        components: {
+          MuiAppBar: {
+            styleOverrides: {
+              root: {
+                backgroundColor: colorMode === 'light' ? '#2b5da2' : '#e61c25',
+              },
+            },
+          },
         },
       }),
+
     [colorMode]
   )
 
